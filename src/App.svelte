@@ -3,11 +3,22 @@
 	export let lastName;
     let svelteLogo = " https://arepa.s3.amazonaws.com/svelte-logo.png";
     import About from "./components/About.svelte";
+    import Person from "./components/Person.svelte";
+    import Text from "./components/Text.svelte";
+
+    const data = {
+        name: "Leonardo",
+        lastName: "Guilarte",
+        age: "24"
+    }
 </script>
 
 <main>
 	<h1>Hello {name} {lastName}!</h1>
     <About />
+    <Text anotherText="Hola!" />
+    <Text />
+    <Person {...data}/>
     <img src={svelteLogo} alt="Svelte">
 </main>
 
