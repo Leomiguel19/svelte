@@ -2,11 +2,12 @@
 	export let name;
 	export let lastName;
     let svelteLogo = " https://arepa.s3.amazonaws.com/svelte-logo.png";
+    import About from "./components/About.svelte";
 </script>
 
 <main>
 	<h1>Hello {name} {lastName}!</h1>
-    <p>Frontend Developer</p>
+    <About />
     <img src={svelteLogo} alt="Svelte">
 </main>
 
