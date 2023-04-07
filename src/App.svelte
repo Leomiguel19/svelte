@@ -4,6 +4,7 @@
     let svelteLogo = " https://arepa.s3.amazonaws.com/svelte-logo.png";
     import About from "./components/About.svelte";
     import Person from "./components/Person.svelte";
+  import Skills from "./components/Skills.svelte";
     import Text from "./components/Text.svelte";
 
     const data = {
@@ -19,6 +20,7 @@
     <Text anotherText="Hola!" />
     <Text />
     <Person {...data}/>
+    <Skills/>
     <img src={svelteLogo} alt="Svelte">
 </main>
 
